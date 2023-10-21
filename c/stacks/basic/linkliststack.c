@@ -71,6 +71,7 @@ int pop()
     }
 }
 
+
 void push(int val)
 {
     stack* ptr;
@@ -98,4 +99,4 @@ int peek()
     {
         printf("The topmost element is %d\n",top->val);
     }
-}
+} 
