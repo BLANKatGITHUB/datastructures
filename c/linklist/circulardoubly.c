@@ -9,7 +9,7 @@ typedef struct node
  nodes *start=NULL;
 
  nodes create_ll();
- nodes display();
+ nodes *display();
  nodes insertbef();
  nodes insertaft();
  nodes search();
@@ -145,15 +145,22 @@ nodes create_ll()
               printf("number is not in the list \n");
               }
           
-           nodes display()
+           nodes *display()
            { 
             nodes *ptr=start;
+            if(ptr==NULL)
+            {
+                printf("link list is empty");
+                return 0;
+            }
+
             printf("\nthe data on linked list are ");
             while (ptr!=start);
             {
-              printf("\t%d",ptr->data);
+              printf(" %d",ptr->data);
               ptr=ptr->next;
             } 
+            printf(" %d",ptr->data);
             printf("\n");
            }
            nodes deletebeg()
