@@ -41,7 +41,7 @@ int priority(char x) {
 
 void reverse(char *str) {
   int l = strlen(str);
-  for (int i = 0; i <= l / 2; i++) {
+  for (int i = 0; i < l / 2; i++) {
     if(str[i] == '(') str[i] = ')';
     else if(str[i] == ')') str[i] = '(';
     if(str[l - i - 1] == '(') str[l - i - 1] = ')';
