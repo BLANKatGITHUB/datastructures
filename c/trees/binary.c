@@ -228,10 +228,10 @@ void deletetree(struct Node **root) {
 }
 
 struct Node* findmax(struct Node* root) {
-if(root == NULL && root->right == NULL) {
-return root;
-}
-else {
-return findmax(root->right);
-}
+    if(root == NULL || root->right == NULL) {
+        return root;
+    }
+    else {
+        return findmax(root->right);
+    }
 }
