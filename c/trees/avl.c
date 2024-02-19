@@ -258,3 +258,4 @@ node* search(node* root,int data){
     else if(data > root->data)return search(root->right,data);
     else return root;
 }
+#blank
